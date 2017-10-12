@@ -1,0 +1,65 @@
+/*   Accordion Styling */
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #427eb4;
+    color: #fff;
+    cursor: pointer;
+    padding: 30px;
+	border-radius: 3px;
+    width: 100%;
+	border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #FFFFFF;
+	color:#333333
+}
+
+button.accordion:after {
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Find a LEAP Course Styling */
+#leap-courses p {
+	font-size: 18px;
+}
+
+#provinces {
+	background: #f9f9f9 none repeat scroll 0 0;
+    padding: 10px;
+    font-size: 18px;
+	margin-bottom:20px;
+}
+
+#leap-courses-open-sessions .leap-course-list #leap-course-info{
+	font-size: 18px;
+	padding: 20px;
+}
+
+.leap-course-list:nth-child(odd){
+	background: #f5f5f5
+}
+
+#find-leap-button {
+	margin: 0px 0px 20px 10px;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 50px;
+	height: 50px;
+}
